@@ -1,0 +1,103 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>Skr Skr</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        margin:0px;
+      }
+      #navbar {
+        position: fixed;
+        width :100%;
+        height :70px;
+        display:grid;
+        grid-template-columns:200px 1fr;
+        background: white;
+        border-bottom :1px black solid;
+        border-top :1px black solid;
+
+      }
+      #navbar h1{
+        margin:0px;
+        text-align:center;
+        line-height:200%;
+      }
+      #home {
+        color:black;
+        text-decoration: none;
+        font-family: "Trebuchet MS", Dotum, Arial;
+        font-size: 32px;
+        font-weight: bold;
+        margin : 0px;
+        height : 70px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      #topMenu {
+        height: 70px;
+      }
+      #topMenu ul{
+        float:right;
+        margin: 0px;
+        padding: 0px;
+      }
+      #topMenu ul li {
+        list-style: none;
+        line-height: 70px;
+        float: left;
+        vertical-align: right;
+        text-align: center;
+      }
+      #home:hover {
+        color:red;
+      }
+      #topMenu .menuLink{
+        text-decoration: none;
+        color: black;
+        display: block;
+        width: 150px;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: "Trebuchet MS", Dotum, Arial;
+      }
+      #topMenu .menuLink:hover {
+        color: red;
+      }
+
+      #maincontent_1 {
+        padding-top:71px;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+      }
+      #maincontent_2 {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h1><a class="menuLink" id="home" href="index.html">Skr Skr_</a></h1>
+      <nav id="topMenu">
+        <ul>
+          <li><a class="menuLink" href="#">Work</a></li>
+          <li><a class="menuLink" href="#">Service</a></li>
+          <li><a class="menuLink" href="#">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="maincontent_1">
+      <a href="https://youtu.be/KeqsYeOHWHU" target="_blank"><img src="DanokGiving.gif" alt="#DANOKGIVING" width="100%"></a>
+      <a href="http://www.noisetteofficial.com" target="_blank"><img src="noisetteofficial.jpg" alt="Noisette Official" width="100%"></a>
+      <img src="Kaizen Main.jpg" alt="Kaizen Notebook" width="100%">
+    </div>
+    <div id="maincontent_2">
+      <a href="https://www.instagram.com/impacthubsea/" target="_blank"><img src="ImpactHubSeattle.gif" alt="ImpactHub Lunch&Learn" width="100%"></a>
+      <img src="Evergreen Changemaker lab.jpg" alt="Evergreen Changemaker lab" width="100%">
+      <img src="ColumbiaCityMarket.gif" alt="Columbia City market" width="100%">
+    </div>
+  </body>
+</html>
