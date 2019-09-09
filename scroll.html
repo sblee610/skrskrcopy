@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Scroll</title>
+    <style>
+      body {
+        margin : 0;
+      }
+      .scrollcon {
+        scroll-snap-type: y mandatory;
+        scroll-behavior : smooth;
+        overflow: auto;
+        width : 100vw;
+        height : 100vh;
+
+      }
+      .con {
+        display : flex;
+        height : 100%;
+        font-size : 5em;
+        justify-content: center;
+        padding : auto;
+        align-items : center;
+        scroll-snap-align : start;
+      }
+      .nav {
+        list-style-type :none;
+        padding : 0;
+        position : fixed;
+        top : 0;
+        width : 300px;
+        margin : 0 auto;
+        overflow : hidden;
+      }
+
+      li {
+        float : left;
+      }
+
+      li a {
+        display : block;
+        color : white;
+        text-align : center;
+        font-size : 2em;
+        padding : 10px;
+        text-decoration : none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="nav">
+      <li><a href="#1">1</a></li>
+      <li><a href="#2">2</a></li>
+      <li><a href="#3">3</a></li>
+      <li><a href="#4">4</a></li>
+      <li><a href="#5">5</a></li>
+      <li><a href="#6">6</a></li>
+      <li><a href="#7">7</a></li>
+      <li><a href="#8">8</a></li>
+    </ul>
+    <div class="scrollcon">
+      <div class="con" id="1" style="background-color : red;">1</div>
+      <div class="con" id="2" style="background-color : orange;">2</div>
+      <div class="con" id="3" style="background-color : gray;">3</div>
+      <div class="con" id="4" style="background-color : green;">4</div>
+      <div class="con" id="5" style="background-color : blue;">5</div>
+      <div class="con" id="6" style="background-color : skyblue;">6</div>
+      <div class="con" id="7" style="background-color : red;">7</div>
+      <div class="con" id="8" style="background-color : skyblue;">8</div>
+    </div>
+  </body>
+</html>
