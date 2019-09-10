@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Skr Skr</title>
+    <style>
+      @font-face{font-family:'Arimo'; src:url('Arimo-Regular.ttf')}
+      body {
+        font-family:'Arimo';
+        margin : 0;
+        overflow-style: none;
+      }
+      ::-webkit-scrollbar {
+        display:none;
+      }
+      .scrollcon {
+        scroll-snap-type: y mandatory;
+        scroll-behavior : smooth;
+        overflow: auto;
+        width : 100vw;
+        height : 100vh;
+      }
+      .bar {
+        position : fixed;
+        width : 100%;
+        height : 78px;
+        z-index : 10;
+      }
+
+      .con {
+        position : relative;
+        height : 100%;
+        font-size : 5em;
+        padding : auto;
+        scroll-snap-align : start;
+        overflow : hidden;
+      }
+      .nav {
+        list-style-type :none;
+        padding : 0;
+        position : absolute;
+        z-index : 10;
+        top : 0;
+        right : 50px;
+        overflow : hidden;
+        margin : 40px 0 0 0;
+      }
+
+      li {
+        float : left;
+      }
+
+      li a {
+        display : block;
+        color : black;
+        text-align : center;
+        font-size : 1em;
+        padding : 10px;
+        text-decoration : none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bar">
+      <a href="#home"><img src="LOGO_black.png" style="margin-top: 35px; position:absolute; left:5vw; z-index:11; height:80%;"></a>
+      <ul class="nav">
+        <li><a href="#service">SERVICE</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#clients">CLIENTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#contact">中</a></li>
+      </ul>
+    </div>
+    <div class="scrollcon">
+
+      <div class="con" id="home">
+          <img src="firstbackground.png" style="height:100vh; margin:auto;position: absolute; left:25vw; margin-left:-48.8vh ;z-index:0;">
+
+          <p style="position : absolute; top: 45%; left:0; right:0; margin:auto; font-size : 0.6em; z-index:1; text-align:center; color: white;">Spread Your Vaule Into The World</p>
+          <div style="position : absolute; display : flex; bottom : 50px; height : 26px; width : 70px; margin-left:-35px;font-size: 15px; color:white; border: 1.5px white solid; left: 50%; border-radius: 13px; align-items:center; justify-content:center; ">SCROLL</div>
+      </div>
+      <div class="con" id="service">
+        <p style="width : 80%; position : absolute; top: 40%; left:0; right:0; margin:auto; font-size : 0.5em; z-index:2; text-align:center; color: #8E8E8E;">A global design <span style="color:#6B6B6B;">consulting firm</span> focusing on providing strategy solutions on digital experience and marketing</p>
+        <p style="position : absolute; bottom :100px; right: 5vw; font-size : 2em; z-index:1; text-align:center; color: #C5C5C5; margin:0;">Service</p>
+        <div style="position : absolute; display : flex; bottom : 50px; height : 26px; width : 70px; margin-left:-35px;font-size: 15px; color:black; border: 1px black solid; left: 50%; border-radius: 13px; align-items:center; justify-content:center; ">SCROLL</div>
+      </div>
+      <div class="con" id="service1">
+        <div class="serviceProGrid" style="position:absolute; top:17vh; left:0; right:0; margin:auto; width:90%; height:50vh; display:grid; grid-template-columns: 100px 1fr 1fr; overflow:hidden; font-size:0.4em;">
+          <div id="service number" style="display:grid; grid-template-rows: 1fr 2fr 1fr 2fr 1fr;">
+            <div style="display:flex; align-items:center; justify-content:center; "><a href="#service1"  style="text-decoration:none; color:#6B6B6B;">1</a></div>
+            <div style="width:48px; border-right:2px #C5C5C5 solid; "></div>
+            <div style="display:flex; align-items:center; justify-content:center; "><a href="#service2" style="text-decoration:none; color:#C5C5C5;">2</a></div>
+            <div style="width:48px; border-right:2px #C5C5C5 solid; "></div>
+            <div style="display:flex; align-items:center; justify-content:center; "><a href="#service3" style="text-decoration:none; color:#C5C5C5;">3</a></div>
+          </div>
+          <div style="display:flex; align-items:center; justify-content:center;"><img src="1.png" style="width:100%;"> </div>
+          <div style="display:flex; "><p style="padding:30px; color:#6B6B6B; font-size:1.5em;">Putting ourselves in your shoes to understand your challenge</p></div>
+        </div>
+        <p style="position : absolute; bottom :100px; right: 5vw; font-size : 1em; z-index:1; text-align:center; color: #C5C5C5; margin:0;">Dialogue Session</p>
+        <div style="position : absolute; display : flex; bottom : 50px; height : 26px; width : 70px; margin-left:-35px;font-size: 15px; color:black; border: 1px black solid; left: 50%; border-radius: 13px; align-items:center; justify-content:center; ">SCROLL</div>
+      </div>
+      <div class="con" id="service2">
+        <div class="serviceProGrid" style="position:absolute; top:17vh; left:0; right:0; margin:auto; width:90%; height:50vh; display:grid; grid-template-columns: 100px 1fr 1fr; font-size:0.4em;">
+          <div id="service number" style="display:grid; grid-template-rows: 1fr 2fr 1fr 2fr 1fr;">
+            <div style="display:flex; align-items:center; justify-content:center;"><a href="#service1" style="text-decoration:none; color:#C5C5C5;">1</a></div>
+            <div style="width:48px; border-right:2px #C5C5C5 solid; "></div>
+            <div style="display:flex; align-items:center; justify-content:center;"><a href="#service2" style="text-decoration:none; color:#6B6B6B;">2</a></div>
+            <div style="width:48px; border-right:2px #C5C5C5 solid; "></div>
+            <div style="display:flex; align-items:center; justify-content:center;"><a href="#service3" style="text-decoration:none; color:#C5C5C5;">3</a></div>
+          </div>
+          <div style="display:flex; align-items:center; justify-content:center;"><img src="2.png" style="width:100%;"> </div>
+          <div style="display:flex; "><p style="padding:30px; color:#6B6B6B; font-size:1.5em;">Designing a solution to solve the challenge</p></div>
+        </div>
+        <p style="position : absolute; bottom :100px; right: 5vw; font-size : 1em; z-index:1; text-align:center; color: #C5C5C5; margin:0;">Co-Creation</p>
+        <div style="position : absolute; display : flex; bottom : 50px; height : 26px; width : 70px; margin-left:-35px;font-size: 15px; color:black; border: 1px black solid; left: 50%; border-radius: 13px; align-items:center; justify-content:center; ">SCROLL</div>
+      </div>
+      <div class="con" id="service3">
+        <div class="serviceProGrid" style="position:absolute; top:17vh; left:0; right:0; margin:auto; width:90%; height:50vh; display:grid; grid-template-columns: 100px 1fr 1fr; font-size:0.4em;">
+          <div id="service number" style="display:grid; grid-template-rows: 1fr 2fr 1fr 2fr 1fr;">
+            <div style="display:flex; align-items:center; justify-content:center;"><a href="#service1" style="text-decoration:none; color:#C5C5C5;">1</a></div>
+            <div style="width:48px; border-right:2px #C5C5C5 solid; "></div>
+            <div style="display:flex; align-items:center; justify-content:center;"><a href="#service2" style="text-decoration:none; color:#C5C5C5;">2</a></div>
+            <div style="width:48px; border-right:2px #C5C5C5 solid; "></div>
+            <div style="display:flex; align-items:center; justify-content:center;"<a href="#service3" style="text-decoration:none; color:#6B6B6B;">3</a></div>
+          </div>
+          <div style="display:flex; align-items:center; justify-content:center;"><img src="3.png" style="width:100%;"> </div>
+          <div style="display:flex; "><p style="padding:30px; color:#6B6B6B; font-size:1.5em;">Final step.</br>Here we double-check we will deliver what you need.</p></div>
+        </div>
+        <p style="position : absolute; bottom :100px; right: 5vw; font-size : 1em; z-index:1; text-align:center; color: #C5C5C5; margin:0;">Revision</p>
+        <div style="position : absolute; display : flex; bottom : 50px; height : 26px; width : 70px; margin-left:-35px;font-size: 15px; color:black; border: 1px black solid; left: 50%; border-radius: 13px; align-items:center; justify-content:center; ">SCROLL</div>
+      </div>
+      <div class="con" id="works">
+
+      </div>
+      <div class="con" id="clients">
+        3
+      </div>
+      <div class="con" id="contact">
+        4
+      </div>
+    </div>
+  </body>
+</html>
